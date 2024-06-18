@@ -13,7 +13,8 @@
 
 @font-face {
   font-family: "GROBOLD";
-  src: url("GROBOLD.woff2") format("woff2"), url("GROBOLD.woff") format("woff");
+  src: url("/assets/GROBOLD.woff2") format("woff2"),
+    url("/assets/GROBOLD.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -22,7 +23,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /*
@@ -176,7 +178,11 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+  .screenshots_container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
 }
 
 @media print,
@@ -256,4 +262,38 @@ textarea {
 .main_bg {
   background-image: url("../img/bg.png");
   color: #fff;
+}
+
+.play_links {
+  display: flex;
+  background-color: white;
+  border-radius: 16px;
+  min-width: 200px;
+  justify-content: center;
+  gap: 16px;
+  padding: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.play_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game_description_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screenshots_container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+  overflow-x: scroll;
 }
