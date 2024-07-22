@@ -8,4 +8,4 @@ You can visit the website here: https://rogerlopz.github.io/starry-space-rocket/
 
 ## Play the game:
 - [On Itch.io](https://rogerlopz.itch.io/starry-rocket-space)
-- On Android (Coming Soon)
+- [On Android](https://play.google.com/store/apps/details?id=com.crazyxolo.starryrocketspace)
